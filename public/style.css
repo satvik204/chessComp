@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+*{
+    font-family: "Parkinsans", sans-serif;
+}
+body{
+    background-color: black;
+    overflow: hidden !important;
+}
+
+.container{
+display: none;
+}
+
+
+.right{
+    color: white;
+}
+
+.profile-img,.profile-img2{
+    width: 40px;
+    height: 40px;
+}
+
+.white-player,.black-player{
+    display: flex;
+    align-items: center;
+}
+
+.black-name,.white-name{
+    margin-left: 20px;
+}
+
+.white-player{
+margin-top: 260px;
+}
+.contain{
+background-color: white;
+border-radius: 20px;
+width: 600px;
+height: 400px;
+}
+
+.app{
+    width: 100vw;
+    height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden !important;
+}
+.heading{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+#nameinp{
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+    border: 1px solid #666;
+    border-radius: 5px;
+    outline: none;
+    width: 570px;
+    height: 40px;
+}
+
+#nameinp::placeholder{
+padding-left: 10px;
+}
+
+#input{
+    margin-left: 10px;
+}
+
+.endgame{
+    position: absolute;
+    width: 300px;
+   height: 100px;
+   display: none;
+background-color: #666;
+margin-top: 150px;
+margin-left: 50px;
+border-radius: 12px;
+}
+
+.button{
+    margin-left: 120px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    height: 4vh;
+    cursor: pointer;
+}
+
+.gameOverText,#gameOverText{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 5px;
+}
+#gameOverText{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 0px;
+}
+.cross{
+    text-align: right;
+    margin-right: 20px;
+    color: #fb7474;
+}
+
+.heading2{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.difficulty{
+display: flex;
+
+align-items: center;
+}
+
+#difficulty-level{
+    margin-left: 10px;
+}
+
+.easy,.medium,.hard,.insane,.hardcore{
+    background-color: rgb(0, 89, 255);
+    color: white;
+    border-radius: 12px;
+
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    transition: .2s all;
+    cursor: pointer;
+}
+
+.easy:hover,.medium:hover,.hard:hover,.insane:hover,.hardcore:hover{
+background-color: rgb(0, 61, 173);
+}
+
+.line{
+    margin-left: 30px;
+    width: 530px;
+    height: 2px;
+    background-color: #999;
+    margin-top: 30px;
+    margin-bottom:15px;
+}
+
+.buttons{
+    margin-left: 400px;
+}
+
+.submit{
+    width: 80px;
+    height: 40px;
+    background-color: mediumorchid;
+    color: white;
+    border: none;
+    outline: none;
+   border-radius: 12px;
+   transition: .2s all;
+   cursor: pointer;
+}
+
+
+.clear{
+    width: 80px;
+    height: 40px;
+    background-color: #777;
+    color: white;
+    border: none;
+    outline: none;
+   border-radius: 12px;
+   margin-left: 10px;
+   transition: .2s all;
+   cursor: pointer;
+}
+
+
+.submit:hover{
+    background-color: rgb(133, 61, 151);
+}
+
+
+
+.clear:hover{
+    background-color: #333;
+}

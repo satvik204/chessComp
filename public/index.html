@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Multiplayer - 2024</title>
+
+    <link rel="stylesheet" href="./lib/chessboardjs/css/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body><div class="app"><div class="contain">
+<h3 class="heading">Enter your name(required) & profile(optional):- </h3>
+<input type="text" name="" id="nameinp" required placeholder="Enter Name :-">
+<br>
+<input type="file" name="" id="input" accept="image/*">
+
+<div class="difficulty">
+<h3 class="heading2">Select Difficulty:-</h3>
+<span id="difficulty-level"></span>
+</div>
+
+<div class="diff-buttons">
+    <button class="easy difficult">Easy</button>
+    <button class="medium  difficult">Medium</button>
+    <button class="hard difficult">Hard</button>
+    <button class="insane difficult">Insane</button>
+    <button class="hardcore difficult">Hardcore</button>
+</div>
+
+<div class="line"></div>
+<div class="buttons">
+    <button class="submit">Submit</button>
+    <button class="clear">Clear</button>
+</div>
+</div>
+</div>
+<div class="container">
+    <div id="board1" style="width: 400px;"></div>
+    <div class="right">
+        <div class="black-player">
+            <img src="./asset/Stockfish.jpg" alt="" class="profile-img">
+            <h3 class="black-name">Stockfish</h3>
+        </div>
+
+        
+        <div class="white-player">
+            <img src="" alt="" class="profile-img2">
+            <h3 class="white-name">Stockfish</h3>
+        </div>
+    </div>
+    <div class="endgame"><div class="cross" onclick="document.querySelector('.endgame').style.display = 'none'">x</div><div class="gameOverText gameOverTextmain">fghhg</div><button onclick="location.reload()" class="button">Replay</button></div>
+    <div id="gameOverText"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js" integrity="sha512-xRllwz2gdZciIB+AkEbeq+gVhX8VB8XsfqeFbUh+SzHlN96dEduwtTuVuc2u9EROlmW9+yhRlxjif66ORpsgVA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./stockfish.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./lib/chessboardjs/js/chessboard-1.0.0.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
